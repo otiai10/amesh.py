@@ -1,19 +1,21 @@
 from setuptools import setup, find_packages
 
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
 
 setup(
     name='amesh',
     packages=find_packages(),
-    version='0.0.1',
+    version='0.0.2',
     license='MIT',
     description='みんな大好き東京アメッシュ',
     author='Hiromu OCHIAI',
     author_email='otiai10@gmail.com',
     url='https://github.com/otiai10/amesh.py',
     keywords=['amesh', 'python'],
-    install_requires=requirements,
+    install_requires=[
+        'requests==2.22.0',
+        'pytz==2019.3',
+        'Pillow==6.2.1',
+    ],
     scripts=[
         'bin/amesh'
     ],
