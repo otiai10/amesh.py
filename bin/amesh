@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+import amesh
+
+amesh.get_entry().to_image().show()
