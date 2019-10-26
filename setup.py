@@ -5,8 +5,8 @@ with open('requirements.txt') as f:
 
 setup(
     name='amesh',
-    packages=['amesh'],
-   	version='0.0.1',
+    packages=find_packages(),
+    version='0.0.1',
     license='MIT',
     description='みんな大好き東京アメッシュ',
     author='Hiromu OCHIAI',
@@ -14,7 +14,6 @@ setup(
     url='https://github.com/otiai10/amesh.py',
     keywords=['amesh', 'python'],
     install_requires=requirements,
-   	packages=find_packages(),
     scripts=[
         'bin/amesh'
     ],
