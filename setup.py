@@ -14,7 +14,7 @@ setup(
     install_requires=[
         'requests==2.22.0',
         'pytz==2019.3',
-        'Pillow==6.2.1',
+        'Pillow==8.0.1',
     ],
     scripts=[
         'bin/amesh'
