@@ -33,6 +33,12 @@ class Entry():
         img_map.paste(img_msk, (0, 0), img_msk)
         return img_map
 
+    def to_bytes(self) -> bytes:
+        img = self.to_image()
+        buf = BytesIO()
+        img.save(buf, format='PNG')
+        return buf.getvalue()
+
     def __get_image_for(self, img_url: str) -> Image:
         response = requests.get(img_url)
         return Image.open(BytesIO(response.content))
