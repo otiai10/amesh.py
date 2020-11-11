@@ -2,7 +2,7 @@
 release: dist
 	twine upload dist/*
 
-dist:
+dist: clean
 	python setup.py sdist
 
 clean:
